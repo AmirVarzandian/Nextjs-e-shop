@@ -13,7 +13,7 @@ import { useCallback } from "react"
 import toast from "react-hot-toast"
 import { MdCached, MdClose, MdDelete, MdDone, MdRemoveRedEye } from "react-icons/md"
 interface ManageProductClientProps {
-    products: Product[]
+    products?: Product[] 
 }
 const ManageProductClient: React.FC<ManageProductClientProps> = ({products}) => {
     const router = useRouter()
