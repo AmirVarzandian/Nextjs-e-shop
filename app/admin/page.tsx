@@ -6,6 +6,7 @@ import Container from "../components/Container";
 const Admin = async () => {
     const products = await getProducts({category: null})
     const users = await getUsers()
+    console.log("pppppp",products)
     return (
         <div className="pt-8">
             <Container>
